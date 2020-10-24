@@ -2,6 +2,7 @@
 
 import math
 import numpy as np
+import matplotlib.pyplot as plt
 
 def flat_curve(arr, n):
     return [i + n for i in arr]
@@ -19,3 +20,19 @@ for score_list in test_scores, curved_5, curved_10, curved_sqrt:
     
 for score_list in test_scores, curved_5, curved_10, curved_sqrt:
     print(score_list)
+    
+
+
+print(test_scores.sort())
+
+plt.plot(test_scores)
+plt.ylabel('Test scores')
+plt.show()
+
+# List of Integers 
+numbers = [1, 3, 4, 2] 
+  
+# Sorting list of Integers 
+numbers.sort() 
+
+print(numbers)
