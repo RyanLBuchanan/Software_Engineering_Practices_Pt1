@@ -14,7 +14,7 @@ test_scores = [88, 92, 79, 93, 85]
 
 def sorted_test_scores(arr):
     return test_scores.sort()
-    print(test_scores)
+
 
 curved_5 = flat_curve(test_scores, 5)
 curved_10 = flat_curve(test_scores, 10)
