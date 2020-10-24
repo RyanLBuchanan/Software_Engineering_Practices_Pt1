@@ -16,3 +16,6 @@ curved_sqrt = square_root_curve(test_scores)
 
 for score_list in test_scores, curved_5, curved_10, curved_sqrt:
     print(np.mean(score_list))
+    
+for score_list in test_scores, curved_5, curved_10, curved_sqrt:
+    print(score_list)
