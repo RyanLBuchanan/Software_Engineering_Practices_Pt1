@@ -11,6 +11,8 @@ def square_root_curve(arr):
     return [math.sqrt(i) * 10 for i in arr]
 
 test_scores = [88, 92, 79, 93, 85]
+test_scores.sort()
+
 curved_5 = flat_curve(test_scores, 5)
 curved_10 = flat_curve(test_scores, 10)
 curved_sqrt = square_root_curve(test_scores)
@@ -20,10 +22,6 @@ for score_list in test_scores, curved_5, curved_10, curved_sqrt:
     
 for score_list in test_scores, curved_5, curved_10, curved_sqrt:
     print(score_list)
-    
-
-
-print(test_scores.sort())
 
 plt.plot(test_scores)
 plt.ylabel('Test scores')
