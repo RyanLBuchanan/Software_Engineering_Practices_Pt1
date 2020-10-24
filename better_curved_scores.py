@@ -26,15 +26,6 @@ for score_list in test_scores, curved_5, curved_10, curved_sqrt:
 for score_list in test_scores, curved_5, curved_10, curved_sqrt:
     print(score_list)
 
-for score_list in test_scores, curved_5, curved_10, curved_sqrt:
-    plt.plot(test_scores)
-    plt.ylabel('Test scores')
-    plt.show()
-
-# List of Integers 
-numbers = [1, 3, 4, 2] 
-  
-# Sorting list of Integers 
-numbers.sort() 
-
-print(numbers)
+plt.plot(test_scores, curved_5, 'r--', curved_10, 'bs', curved_sqrt, 'g^')
+plt.ylabel('Test scores')
+plt.show()
